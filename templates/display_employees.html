@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        {%if employees%}
+        <th>FIRSTNAME</th>
+        <th>LASTNAME</th> <th>EMAIL</th> <th>EMPLOYEE_ID</th>
+        {%for i in employess%}
+        <tr>
+        <td>{{i.first_name}}</td> <td>{{i.last_name}}</td> <td>{{i.email}}</td>
+        <td>{{i.employee_id}}</td>
+        </tr>
+        {%endfor%}
+        {%endif%} 
+</body>
+</html>
